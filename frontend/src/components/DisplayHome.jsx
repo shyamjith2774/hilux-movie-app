@@ -12,7 +12,7 @@ const DisplayHome = () => {
     
 
     return (
-        <div className=' bg-[#1212128d] '>
+        <div className=' bg-gradient-to-r from-[#2D5564] via-[#1a3a47] to-[#142832] '>
 
 
             <Navbar />
@@ -23,7 +23,7 @@ const DisplayHome = () => {
                         <img
                             src={`https://image.tmdb.org/t/p/w500${items.poster_path}`}
                             alt={items.title}
-                            className="w-full h-100 rounded transition duration-300 ease-in-out hover:scale-140"
+                            className="w-full h-100 rounded transition duration-300 ease-in-out hover:scale-110"
                         />
                       
                     </Link>

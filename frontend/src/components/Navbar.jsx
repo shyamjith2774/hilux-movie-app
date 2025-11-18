@@ -6,7 +6,7 @@ const Navbar = () => {
  
   const{search,setsearch}=useState(false)
   return (
-    <div className='flex items-center justify-between py-3 md:py-3 px-4 md:px-7 bg-red-500 '>
+    <div className='flex items-center justify-between py-3 md:py-3 px-4 md:px-7 bg-[#142832]'>
         
         <div >
        <p className='text-[30px] text-white transition duration-300 ease-in-out hover:scale-120 hover:text-white'>Hilux Movies</p>
