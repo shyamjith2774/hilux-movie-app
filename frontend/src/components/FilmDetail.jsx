@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { MovieContext } from '../context/MovieContext'
 import { Play, Share2, Info } from 'lucide-react'
+import Snowfall from 'react-snowfall'
 
 const FilmDetail = () => {
   const { filmId } = useParams()
@@ -20,8 +21,8 @@ const FilmDetail = () => {
         backgroundImage: `linear-gradient(135deg, rgba(45, 85, 100, 0.85) 0%, rgba(20, 40, 50, 0.9) 100%), url('https://image.tmdb.org/t/p/w1280${moviedetails?.backdrop_path}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
-      }}
-    >
+      }}>
+        <Snowfall color="#82C5D9"/>
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-transparent to-transparent" />
       
       <div className="relative z-10 h-full flex items-end pb-16 px-8 md:px-16">
@@ -64,7 +65,7 @@ const FilmDetail = () => {
                 <Play className="w-5 h-5 fill-white" />
                 PLAY NOW
               </button>
-              <button className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold px-8 py-3 rounded transition">
+              <button className="bg-transparent border-2 border-white hover:bg-white focus:text-red-800  hover:text-gray-900 text-white font-semibold px-8 py-3 rounded transition">
                 TRAILER
               </button>
               <button className="bg-transparent hover:bg-white/10 text-white p-3 rounded transition">
